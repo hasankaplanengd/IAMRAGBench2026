@@ -1,0 +1,11 @@
+{
+  "variant": "weak_note",
+  "k": 5,
+  "queries": 60,
+  "corpus_docs": 720,
+  "poison_in_topk": 59,
+  "clean_in_ctrl_topk": 59,
+  "clean_in_poi_topk": 48,
+  "pairs_path": "data/master_e2e_rag_ablation_v1/weak_note/rag_pairs_k5_standard_run_eval.jsonl",
+  "detail_path": "data/master_e2e_rag_ablation_v1/weak_note/retrieval_detail_k5.jsonl"
+}

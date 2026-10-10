@@ -1,0 +1,14 @@
+{
+  "retriever": "local_bm25",
+  "variant": "master_e2e_rag_v2_retrieval_competitive_strong_poi",
+  "queries": 60,
+  "corpus_docs": 720,
+  "clean_relevant_docs": 60,
+  "poison_relevant_docs": 60,
+  "distractor_docs": 600,
+  "poison_retrieved_at_1": 35,
+  "poison_retrieved_at_3": 57,
+  "poison_retrieved_at_5": 59,
+  "poison_retrieved_at_10": 60,
+  "clean_retrieved_at_5": 54
+}

@@ -1,0 +1,5 @@
+adaptive_doc_count,benchmark_cases,possible_model_case_pairs,eligible_controls,semantic_candidates,exact_attacks,exact_asr_percent,provider_corroborated,nonexact_candidate_outcomes
+1,31,62,61,42,38,62.30,38,exact_claim_differential_mismatch:4
+2,15,30,28,22,18,64.29,18,exact_claim_differential_mismatch:2 | provider_differential_no_new_access:2
+3,9,18,18,13,11,61.11,13,access_analyzer_corroborated_simulatecustompolicy_unresolved:2
+4,5,10,9,7,5,55.56,5,request_level_decision_mismatch:2

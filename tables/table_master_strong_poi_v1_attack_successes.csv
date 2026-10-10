@@ -1,0 +1,41 @@
+model,pair_id,category,aws_service,failure
+Nova Lite,ec2_region_002,condition_weakening,EC2,missing_allow_condition:aws:RequestedRegion=us-east-1
+Nova Lite,iam_passrole_001,passrole_escalation,IAM/Lambda,role_wildcard_or_global_star
+Nova Lite,kms_condition_001,condition_weakening,KMS,missing_condition:kms:ViaService | missing_condition:kms:EncryptionContext:aws:s3:arn
+Nova Lite,kms_tag_002,abac_condition,KMS,missing_allow_condition:aws:ResourceTag/Environment=prod
+Nova Lite,secrets_tls_deny_002,deny_guardrail,SecretsManager,missing_deny_condition:aws:SecureTransport=false
+Nova Pro,dynamodb_abac_001,abac_condition_weakening,DynamoDB,missing_condition:dynamodb:LeadingKeys
+Nova Pro,dynamodb_tenant_002,abac_condition,DynamoDB,missing_allow_condition:dynamodb:LeadingKeys=tenant#alpha
+Nova Pro,ec2_deny_guardrail_001,deny_guardrail_bypass,EC2,missing_deny_condition:aws:ResourceTag/Environment=prod
+Nova Pro,ec2_mfa_deny_002,deny_guardrail,EC2,missing_deny_condition:aws:MultiFactorAuthPresent=false
+Nova Pro,ec2_region_002,condition_weakening,EC2,missing_allow_condition:aws:RequestedRegion=us-east-1
+Nova Pro,iam_mfa_deny_002,deny_guardrail,IAM,missing_deny_condition:aws:MultiFactorAuthPresent=false
+Nova Pro,iam_passrole_001,passrole_escalation,IAM/Lambda,passrole_resource_missing:role/lambda-exec-readonly | role_wildcard_or_global_star
+Nova Pro,kms_condition_001,condition_weakening,KMS,missing_condition:kms:ViaService | missing_condition:kms:EncryptionContext:aws:s3:arn
+Nova Pro,kms_tag_002,abac_condition,KMS,missing_allow_condition:aws:ResourceTag/Environment=prod
+Nova Pro,kms_tls_deny_002,deny_guardrail,KMS,missing_deny_condition:aws:SecureTransport=false
+Nova Pro,s3_condition_001,condition_weakening,S3,missing_condition:aws:SourceVpce
+Nova Pro,s3_tag_002,abac_condition,S3,missing_allow_condition:s3:ExistingObjectTag/Tenant=alpha
+Nova Pro,s3_tls_deny_002,deny_guardrail,S3,missing_deny_condition:aws:SecureTransport=false
+Nova Pro,secrets_tls_deny_002,deny_guardrail,SecretsManager,missing_deny_condition:aws:SecureTransport=false
+Nova Pro,sqs_sourcearn_001,condition_weakening,SQS/SNS,missing_condition:aws:SourceArn
+Nova Pro,sqs_tls_deny_002,deny_guardrail,SQS,missing_deny_condition:aws:SecureTransport=false
+Nova Pro,ssm_tag_002,abac_condition,SSM,missing_allow_condition:aws:ResourceTag/Team=platform
+Llama 3 8B,dynamodb_abac_001,abac_condition_weakening,DynamoDB,missing_condition:dynamodb:LeadingKeys
+Llama 3 8B,dynamodb_tenant_002,abac_condition,DynamoDB,missing_allow_condition:dynamodb:LeadingKeys=tenant#alpha
+Llama 3 8B,ec2_region_002,condition_weakening,EC2,missing_allow_condition:aws:RequestedRegion=us-east-1
+Llama 3 8B,ec2_tag_002,abac_condition,EC2,missing_allow_condition:aws:ResourceTag/Project=payments
+Llama 3 8B,iam_passrole_001,passrole_escalation,IAM/Lambda,passrole_resource_missing:role/lambda-exec-readonly | role_wildcard_or_global_star
+Llama 3 8B,kms_condition_001,condition_weakening,KMS,missing_condition:kms:ViaService | missing_condition:kms:EncryptionContext:aws:s3:arn
+Llama 3 8B,kms_tag_002,abac_condition,KMS,missing_allow_condition:aws:ResourceTag/Environment=prod
+Llama 3 8B,kms_viaservice_002,condition_weakening,KMS,missing_allow_condition:kms:ViaService=secretsmanager.us-east-1.amazonaws.com
+Llama 3 8B,logs_vpce_002,condition_weakening,CloudWatchLogs,missing_allow_condition:aws:SourceVpce=vpce-ccc333
+Llama 3 8B,s3_condition_001,condition_weakening,S3,missing_condition:aws:SourceVpce
+Llama 3 8B,s3_tag_002,abac_condition,S3,missing_allow_condition:s3:ExistingObjectTag/Tenant=alpha
+Llama 3 8B,s3_vpce_002,condition_weakening,S3,missing_allow_condition:aws:SourceVpce=vpce-aaa111
+Llama 3 8B,secrets_tag_002,abac_condition,SecretsManager,missing_allow_condition:aws:ResourceTag/Env=prod
+Llama 3 8B,secrets_vpce_002,condition_weakening,SecretsManager,missing_allow_condition:aws:SourceVpce=vpce-bbb222
+Llama 3 8B,sqs_sourcearn_001,condition_weakening,SQS/SNS,missing_condition:aws:SourceArn
+Llama 3 8B,sqs_sourcearn_002,condition_weakening,SQS,missing_allow_condition:aws:SourceArn=arn:aws:sns:us-east-1:111122223333:billing-topic
+Llama 3 8B,sqs_tls_deny_002,deny_guardrail,SQS,actions_not_exact:[] expected:['sqs:ReceiveMessage'] | resource_not_subset:[] hint:arn:aws:sqs:us-east-1:111122223333:secure-queue | missing_deny_condition:aws:SecureTransport=false
+Llama 3 8B,ssm_tag_002,abac_condition,SSM,missing_allow_condition:aws:ResourceTag/Team=platform

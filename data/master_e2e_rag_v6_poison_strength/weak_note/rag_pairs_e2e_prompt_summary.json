@@ -1,0 +1,10 @@
+{
+  "k5": {
+    "pairs": 60,
+    "output_path": "data/master_e2e_rag_v6_poison_strength/weak_note/rag_pairs_e2e_k5_run_eval.jsonl",
+    "detail_path": "data/master_e2e_rag_v6_poison_strength/weak_note/rag_pairs_e2e_k5_retrieval_detail.jsonl",
+    "poison_in_poi_topk": 60,
+    "clean_in_ctrl_topk": 60,
+    "clean_in_poi_topk": 60
+  }
+}

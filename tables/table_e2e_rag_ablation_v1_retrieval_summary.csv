@@ -1,0 +1,4 @@
+variant,k,queries,corpus_docs,poison_in_topk,clean_in_ctrl_topk,clean_in_poi_topk,pairs_path
+retrieval_only,5,60,720,54,59,59,data/master_e2e_rag_ablation_v1/retrieval_only/rag_pairs_k5_standard_run_eval.jsonl
+weak_note,5,60,720,59,59,48,data/master_e2e_rag_ablation_v1/weak_note/rag_pairs_k5_standard_run_eval.jsonl
+strong_template,5,60,720,59,59,54,data/master_e2e_rag_ablation_v1/strong_template/rag_pairs_k5_standard_run_eval.jsonl

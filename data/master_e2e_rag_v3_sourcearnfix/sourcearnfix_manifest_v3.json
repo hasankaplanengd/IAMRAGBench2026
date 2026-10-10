@@ -1,0 +1,20 @@
+{
+  "version": "sourcearnfix_v3",
+  "base": "vpcefix_v2",
+  "purpose": "Correct SQS SourceArn cases to require provider-valid queue resource policies with the exact SNS service principal.",
+  "cases": {
+    "sqs_sourcearn_001": {
+      "topic_name": "billing-events",
+      "topic_arn": "arn:aws:sns:us-east-1:111122223333:billing-events"
+    },
+    "sqs_sourcearn_002": {
+      "topic_name": "billing-topic",
+      "topic_arn": "arn:aws:sns:us-east-1:111122223333:billing-topic"
+    }
+  },
+  "required_principal": {
+    "Service": "sns.amazonaws.com"
+  },
+  "required_queue": "arn:aws:sqs:us-east-1:111122223333:billing-queue",
+  "attack_change": "Remove only aws:SourceArn while retaining provider-valid policy shape, action, resource, and SNS service principal."
+}

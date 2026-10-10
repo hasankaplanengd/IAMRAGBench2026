@@ -1,0 +1,10 @@
+{
+  "version": "leadingkeysfix_v5",
+  "base": "oidcfix_v4",
+  "regenerated_case": "dynamodb_tenant_002",
+  "strictly_rescored_case": "dynamodb_abac_001",
+  "required_operator": "ForAllValues:StringEquals",
+  "required_key": "dynamodb:LeadingKeys",
+  "required_value": "tenant#alpha",
+  "purpose": "Correct the provider-invalid DynamoDB LeadingKeys case and strengthen both LeadingKeys oracles."
+}

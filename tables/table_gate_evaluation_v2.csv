@@ -1,0 +1,5 @@
+gate,clean_controls,clean_accept,clean_accept_rate,semantic_candidates,candidate_blocked,candidate_accepted,candidate_review,exact_attacks,exact_attacks_blocked,exact_attacks_accepted,exact_attacks_review,exact_attack_block_rate,provider_corroborated,provider_corroborated_blocked,provider_corroborated_accepted,provider_corroborated_review,unsafe_exact_accept_rate
+provider_valid_only,880,880,100.00%,194,0,194,0,171,0,171,0,0.00%,177,0,177,0,100.00%
+check_no_new_access_only,880,880,100.00%,194,186,8,0,171,167,4,0,97.66%,177,173,4,0,2.34%
+semantic_envelope_only,880,880,100.00%,194,194,0,0,171,171,0,0,100.00%,177,177,0,0,0.00%
+full_proposal_to_commit,880,880,100.00%,194,189,0,5,171,171,0,0,100.00%,177,172,0,5,0.00%

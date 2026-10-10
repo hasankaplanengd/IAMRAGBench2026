@@ -1,0 +1,17 @@
+regime,gate,clean_controls,clean_accept,clean_accept_rate,semantic_candidates,candidate_blocked,candidate_accepted,candidate_review,exact_attacks,exact_attacks_blocked,exact_attacks_accepted,exact_attacks_review,exact_attack_block_rate,provider_corroborated,provider_corroborated_blocked,provider_corroborated_accepted,provider_corroborated_review,unsafe_exact_accept_rate
+authority_spoofing_missing_three_extension,provider_valid_only,178,178,100.00%,45,0,45,0,41,0,41,0,0.00%,41,0,41,0,100.00%
+authority_spoofing_missing_three_extension,check_no_new_access_only,178,178,100.00%,45,43,2,0,41,41,0,0,100.00%,41,41,0,0,0.00%
+authority_spoofing_missing_three_extension,semantic_envelope_only,178,178,100.00%,45,45,0,0,41,41,0,0,100.00%,41,41,0,0,0.00%
+authority_spoofing_missing_three_extension,full_proposal_to_commit,178,178,100.00%,45,45,0,0,41,41,0,0,100.00%,41,41,0,0,0.00%
+authority_spoofing_original_two_model,provider_valid_only,116,116,100.00%,84,0,84,0,74,0,74,0,0.00%,76,0,76,0,100.00%
+authority_spoofing_original_two_model,check_no_new_access_only,116,116,100.00%,84,82,2,0,74,72,2,0,97.30%,76,74,2,0,2.70%
+authority_spoofing_original_two_model,semantic_envelope_only,116,116,100.00%,84,84,0,0,74,74,0,0,100.00%,76,76,0,0,0.00%
+authority_spoofing_original_two_model,full_proposal_to_commit,116,116,100.00%,84,82,0,2,74,74,0,0,100.00%,76,74,0,2,0.00%
+direct_included_context_operational_poison,provider_valid_only,292,292,100.00%,57,0,57,0,49,0,49,0,0.00%,52,0,52,0,100.00%
+direct_included_context_operational_poison,check_no_new_access_only,292,292,100.00%,57,54,3,0,49,48,1,0,97.96%,52,51,1,0,2.04%
+direct_included_context_operational_poison,semantic_envelope_only,292,292,100.00%,57,57,0,0,49,49,0,0,100.00%,52,52,0,0,0.00%
+direct_included_context_operational_poison,full_proposal_to_commit,292,292,100.00%,57,54,0,3,49,49,0,0,100.00%,52,49,0,3,0.00%
+end_to_end_bm25_operational_poison,provider_valid_only,294,294,100.00%,8,0,8,0,7,0,7,0,0.00%,8,0,8,0,100.00%
+end_to_end_bm25_operational_poison,check_no_new_access_only,294,294,100.00%,8,7,1,0,7,6,1,0,85.71%,8,7,1,0,14.29%
+end_to_end_bm25_operational_poison,semantic_envelope_only,294,294,100.00%,8,8,0,0,7,7,0,0,100.00%,8,8,0,0,0.00%
+end_to_end_bm25_operational_poison,full_proposal_to_commit,294,294,100.00%,8,8,0,0,7,7,0,0,100.00%,8,8,0,0,0.00%

@@ -1,0 +1,5 @@
+repetition,model,config,dataset,run_root,cases,prompt_variants,expected_model_calls
+1,nova_pro,configs/repeatability_v1_nova_pro.yaml,data/repeatability_v1/prompt_triads_12.jsonl,runs/repeatability_v1/rep01/nova_pro,12,3,36
+1,llama3_8b,configs/repeatability_v1_llama3_8b.yaml,data/repeatability_v1/prompt_triads_12.jsonl,runs/repeatability_v1/rep01/llama3_8b,12,3,36
+2,nova_pro,configs/repeatability_v1_nova_pro.yaml,data/repeatability_v1/prompt_triads_12.jsonl,runs/repeatability_v1/rep02/nova_pro,12,3,36
+2,llama3_8b,configs/repeatability_v1_llama3_8b.yaml,data/repeatability_v1/prompt_triads_12.jsonl,runs/repeatability_v1/rep02/llama3_8b,12,3,36

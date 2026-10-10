@@ -1,0 +1,5 @@
+repetition,model,model_id,cases,new_model_calls,responses,ok_json,error_stubs,wrapped_plain,ordinary_rows,authority_rows,ordinary_raw_outputs,authority_raw_outputs
+1,nova_pro,amazon.nova-pro-v1:0,12,36,36,36,0,0,24,24,24,24
+1,llama3_8b,meta.llama3-8b-instruct-v1:0,12,36,36,36,0,0,24,24,24,24
+2,nova_pro,amazon.nova-pro-v1:0,12,36,36,36,0,0,24,24,24,24
+2,llama3_8b,meta.llama3-8b-instruct-v1:0,12,36,36,36,0,0,24,24,24,24

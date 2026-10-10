@@ -1,0 +1,10 @@
+{
+  "retriever": "local_bm25",
+  "queries": 60,
+  "corpus_docs": 720,
+  "poison_retrieved_at_1": 0,
+  "poison_retrieved_at_3": 1,
+  "poison_retrieved_at_5": 1,
+  "poison_retrieved_at_10": 3,
+  "clean_retrieved_at_5": 59
+}

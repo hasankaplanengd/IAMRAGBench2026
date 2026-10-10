@@ -1,0 +1,11 @@
+# Minimal pinned dependencies for the IAM semantic RAG-poisoning benchmark.
+# Python 3.10+ recommended.
+
+boto3==1.42.33
+botocore==1.42.33
+jmespath==1.1.0
+python-dateutil==2.9.0.post0
+PyYAML==6.0.3
+s3transfer==0.16.0
+six==1.17.0
+urllib3==1.26.20

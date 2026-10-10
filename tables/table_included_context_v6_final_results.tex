@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Final provider-grounded results in the unguarded included-context stress setting. Exact confirmation combines AWS request simulation with exact OIDC-claim and SQS-\texttt{SourceArn} differential witnesses. The corroborated column also includes three KMS cases for which \texttt{CheckNoNewAccess} reports new access but \texttt{SimulateCustomPolicy} cannot establish a positive encryption-context baseline.}
+\label{tab:included-context-v6-final}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & Valid ctrl. & Candidates & Exact & Corrob. & Exact rate & Corrob. rate \\
+\midrule
+Claude Sonnet 4.5 & 59/60 & 0 & 0 & 0 & 0.00\% & 0.00\% \\
+Mistral Small & 60/60 & 7 & 7 & 7 & 11.67\% & 11.67\% \\
+Nova Lite & 60/60 & 9 & 6 & 7 & 10.00\% & 11.67\% \\
+Nova Pro & 60/60 & 22 & 20 & 21 & 33.33\% & 35.00\% \\
+Llama 3 8B & 53/60 & 19 & 16 & 17 & 30.19\% & 32.08\% \\
+\midrule
+Total & 292/300 & 57 & 49 & 52 & 16.78\% & 17.81\% \\
+\bottomrule
+\end{tabular}
+\end{table}

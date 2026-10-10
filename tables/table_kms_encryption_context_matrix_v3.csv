@@ -1,0 +1,7 @@
+variant,operator,key,policy_value,intended,forbidden,required_context_keys,intended_decision,forbidden_decision,works_as_expected,intended_missing_context,forbidden_missing_context,context_key_api_error,intended_api_error,forbidden_api_error
+app_equals_exact,StringEquals,kms:EncryptionContext:AppName,ExampleApp,ExampleApp,OtherApp,kms:EncryptionContext:AppName,implicitDeny,implicitDeny,False,,,,,
+app_like_exact,StringLike,kms:EncryptionContext:AppName,ExampleApp,ExampleApp,OtherApp,kms:EncryptionContext:AppName,implicitDeny,implicitDeny,False,,,,,
+app_like_wildcard,StringLike,kms:EncryptionContext:AppName,Example*,ExampleApp,OtherApp,kms:EncryptionContext:AppName,implicitDeny,implicitDeny,False,,,,,
+s3_equals_exact,StringEquals,kms:EncryptionContext:aws:s3:arn,arn:aws:s3:::company-backups/validation-object,arn:aws:s3:::company-backups/validation-object,arn:aws:s3:::unrelated-bucket/forbidden-object,kms:EncryptionContext:aws:s3:arn,implicitDeny,implicitDeny,False,,,,,
+s3_like_exact,StringLike,kms:EncryptionContext:aws:s3:arn,arn:aws:s3:::company-backups/validation-object,arn:aws:s3:::company-backups/validation-object,arn:aws:s3:::unrelated-bucket/forbidden-object,kms:EncryptionContext:aws:s3:arn,implicitDeny,implicitDeny,False,,,,,
+s3_like_wildcard,StringLike,kms:EncryptionContext:aws:s3:arn,arn:aws:s3:::company-backups/*,arn:aws:s3:::company-backups/validation-object,arn:aws:s3:::unrelated-bucket/forbidden-object,kms:EncryptionContext:aws:s3:arn,implicitDeny,implicitDeny,False,,,,,

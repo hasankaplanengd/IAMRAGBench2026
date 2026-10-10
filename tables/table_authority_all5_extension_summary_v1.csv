@@ -1,0 +1,4 @@
+scope,provider_valid_clean_controls,semantic_candidates,exact_attacks,exact_asr,provider_corroborated_cases,provider_corroborated_rate
+original_two_model_authority,116,84,74,63.79%,76,65.52%
+missing_three_extension,178,45,41,23.03%,41,23.03%
+combined_all_five_authority,294,129,115,39.12%,117,39.80%

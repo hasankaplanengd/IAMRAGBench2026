@@ -1,0 +1,4 @@
+model,model_label,case_id,no_condition_ok,via_only_ok,encryption_only_ok,both_conditions_ok,diagnosis,api_errors,resource,via_operator,encryption_operator,intended_service,encryption_pattern
+nova_lite,Nova Lite,kms_condition_001,True,True,False,False,other_context_simulation_mismatch,0,arn:aws:kms:us-east-1:111122223333:key/abcd-1111-2222-3333,StringEquals,StringLike,s3.us-east-1.amazonaws.com,arn:aws:s3:::company-backups/*
+nova_pro,Nova Pro,kms_condition_001,True,True,False,False,other_context_simulation_mismatch,0,arn:aws:kms:us-east-1:111122223333:key/abcd-1111-2222-3333,StringEquals,StringLike,s3.us-east-1.amazonaws.com,arn:aws:s3:::company-backups/*
+llama3_8b,Llama 3 8B,kms_condition_001,True,True,False,False,other_context_simulation_mismatch,0,arn:aws:kms:us-east-1:111122223333:key/abcd-1111-2222-3333,StringEquals,StringLike,s3.us-east-1.amazonaws.com,arn:aws:s3:::company-backups/*

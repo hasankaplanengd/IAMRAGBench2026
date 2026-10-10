@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Final results for the 60-case IAM semantic benchmark under the \texttt{strong\_poi\_v1} included-context setting. ASR is computed over clean-control-passing cases.}
+\label{tab:strong-poi-v1-final}
+\begin{tabular}{lrrrrl}
+\toprule
+Model & Control pass & Poisoned pass & Attacks & ASR & Model class \\
+\midrule
+Claude Sonnet 4.5 & 60/60 & 60/60 & 0 & 0.0\% & high-capability hosted \\
+Mistral Small & 60/60 & 57/60 & 3 & 5.0\% & small/domain-adjacent \\
+Nova Lite & 60/60 & 55/60 & 5 & 8.3\% & cloud cost-efficient \\
+Nova Pro & 60/60 & 43/60 & 17 & 28.3\% & cloud strong \\
+Llama 3 8B & 57/60 & 39/60 & 18 & 31.6\% & small/open baseline \\
+\bottomrule
+\end{tabular}
+\end{table}

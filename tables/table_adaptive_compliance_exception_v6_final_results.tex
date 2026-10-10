@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Adaptive authority-spoofing stress test. The attack presents a task-specific poisoned document as a final, approved security exception. Exact authorization deltas require a concrete authorization witness. AA-only denotes Access-Analyzer-corroborated KMS cases excluded from the exact ASR.}
+\label{tab:adaptive-authority-v6}
+\begin{tabular}{lrrrr}
+\toprule
+Model & Valid ctrl. & Candidates & Exact deltas & AA-only \\
+\midrule
+Nova Pro & 60/60 & 47 & 45/60 (75.00\%) & 1 \\
+Llama 3 8B & 56/60 & 37 & 29/56 (51.79\%) & 1 \\
+\midrule
+Total & 116/120 & 84 & 74/116 (63.79\%) & 2 \\
+\bottomrule
+\end{tabular}
+\end{table}

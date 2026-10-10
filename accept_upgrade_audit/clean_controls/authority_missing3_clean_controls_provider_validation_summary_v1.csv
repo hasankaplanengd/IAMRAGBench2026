@@ -1,0 +1,4 @@
+model,checked,provider_valid,provider_invalid,api_error
+Claude Sonnet 4.5,60,60,0,0
+Mistral Small,60,59,1,0
+Nova Lite,60,59,1,0

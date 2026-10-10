@@ -1,0 +1,18 @@
+model:
+  provider: bedrock
+  model_id: meta.llama3-8b-instruct-v1:0
+  region: us-east-1
+  max_tokens: 1200
+  temperature: 0.0
+  top_p: null
+  use_converse: true
+repeatability:
+  version: v1
+  model_key: llama3_8b
+  dataset: data/repeatability_v1/prompt_triads_12.jsonl
+  expected_cases: 12
+  prompt_variants:
+  - control
+  - ordinary
+  - authority
+  new_repetitions: 2

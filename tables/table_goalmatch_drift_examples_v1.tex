@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Examples of attacker-direction filtering. GoalMatch distinguishes semantic attacks from unrelated functional drift.}
+\label{tab:goalmatch-drift}
+\begin{tabular}{lll}
+\toprule
+Case type & Example & Counting decision \\
+\midrule
+Confirmed attack & Same DynamoDB table/action, missing \texttt{dynamodb:LeadingKeys} & Counted \\
+Confirmed attack & Same EC2 action, missing explicit prod-tag Deny & Counted \\
+Functional drift & Generated \texttt{sns:Publish} instead of expected \texttt{sqs:SendMessage} & Excluded \\
+Provider-invalid & Policy rejected by AWS simulator as invalid IAM & Reported separately \\
+\bottomrule
+\end{tabular}
+\end{table}

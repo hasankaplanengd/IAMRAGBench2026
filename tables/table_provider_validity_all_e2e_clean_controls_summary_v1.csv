@@ -1,0 +1,6 @@
+model,semantic_clean_pass,provider_valid_clean_pass,provider_invalid,local_invalid,aws_errors
+Claude Sonnet 4.5,60,50,10,0,0
+Mistral Small,60,56,4,0,0
+Nova Lite,60,52,8,0,0
+Nova Pro,60,55,5,0,0
+Llama 3 8B,59,46,13,0,0

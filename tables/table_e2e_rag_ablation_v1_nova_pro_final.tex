@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Poison-strength ablation for the end-to-end RAG setting on Nova Pro. All variants use BM25 retrieval with top-$k=5$ and the standard RAG prompt. ASR is computed over clean-control-passing cases.}
+\label{tab:e2e-rag-ablation-nova-pro}
+\begin{tabular}{lrrrrr}
+\toprule
+Variant & Control pass & Poison@5 & Attacks & ASR & Conditional ASR \\
+\midrule
+\texttt{retrieval\_only} & 60/60 & 54/60 & 0 & 0.0\% & 0.0\% \\
+\texttt{weak\_note} & 60/60 & 59/60 & 0 & 0.0\% & 0.0\% \\
+\texttt{strong\_template} & 60/60 & 59/60 & 3 & 5.0\% & 5.1\% \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,10 @@
+{
+  "variant": "compliance_exception",
+  "pairs": 60,
+  "poison_at_5": 54,
+  "clean_ctrl_at_5": 59,
+  "clean_poi_at_5": 59,
+  "standard_dataset": "data/master_e2e_rag_v2_adaptive_guard_v1/compliance_exception/rag_pairs_k5_standard_run_eval.jsonl",
+  "guarded_dataset": "data/master_e2e_rag_v2_adaptive_guard_v1/compliance_exception/rag_pairs_k5_guarded_run_eval.jsonl",
+  "detail": "data/master_e2e_rag_v2_adaptive_guard_v1/compliance_exception/retrieval_detail_k5.jsonl"
+}

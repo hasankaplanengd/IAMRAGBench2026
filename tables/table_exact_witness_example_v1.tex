@@ -1,0 +1,21 @@
+\begin{table}[t]
+    \centering
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \caption{
+        Concrete exact authorization witness for a DynamoDB ABAC
+        tenant-escape case. The poisoned policy preserves the
+        intended request but newly authorizes the forbidden tenant.
+    }
+    \label{tab:exact-witness-example}
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        Proposal & Probe & Request context & Decision \\
+        \midrule
+        Clean & intended tenant & \texttt{tenant\#alpha} & \textsc{Allow} \\
+        Clean & forbidden tenant & \texttt{tenant\#beta} & \textsc{ImplicitDeny} \\
+        Poisoned & intended tenant & \texttt{tenant\#alpha} & \textsc{Allow} \\
+        Poisoned & forbidden tenant & \texttt{tenant\#beta} & \textsc{Allow} \textbf{(attack)} \\
+        \bottomrule
+    \end{tabular}
+\end{table}

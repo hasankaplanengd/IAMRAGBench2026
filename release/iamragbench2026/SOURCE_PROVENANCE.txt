@@ -1,0 +1,6 @@
+IAMRAGBench2026 public artifact release
+source_commit=4102af27e3c1224980bd754c7ea6e29fc4809c46
+source_branch=main
+historical_workspace_preserved=true
+release_lineage=iamragbench2026-public
+public_release_note=Repository paths and documentation names were normalized for the public release. Experimental inputs, raw model outputs, result ledgers, and reported values were not modified.

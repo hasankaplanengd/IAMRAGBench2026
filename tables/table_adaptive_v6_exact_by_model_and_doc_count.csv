@@ -1,0 +1,9 @@
+model,adaptive_doc_count,eligible_controls,semantic_candidates,exact_attacks,exact_asr_percent
+llama3_8b,1,30,16,12,40.00
+llama3_8b,2,13,10,7,53.85
+llama3_8b,3,9,8,7,77.78
+llama3_8b,4,4,3,2,50.00
+nova_pro,1,31,26,26,83.87
+nova_pro,2,15,12,11,73.33
+nova_pro,3,9,5,4,44.44
+nova_pro,4,5,4,3,60.00

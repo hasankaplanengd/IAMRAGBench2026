@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Defense comparison for Nova Pro in the end-to-end RAG setting. All variants use the same 60-case IAM semantic benchmark, BM25 retrieval, and top-$k=5$. Poisoned documents are retrieved in 59/60 cases.}
+\label{tab:e2e-rag-defense-nova-pro}
+\begin{tabular}{lrrrrl}
+\toprule
+Setting & Control pass & Poison@5 & Confirmed attacks & ASR & Interpretation \\
+\midrule
+Standard RAG prompt & 60/60 & 59/60 & 4 & 6.7\% & untrusted context used as ordinary context \\
+JSON/schema validation & 60/60 & 59/60 & 4 & 6.7\% & valid JSON, semantic failures remain \\
+Guarded RAG prompt & 60/60 & 59/60 & 0 & 0.0\% & mixed-trust prompt reduces failures \\
+Semantic proposal-to-commit gate & 60/60 & 59/60 & 0 & 0.0\% & oracle blocks semantic violations \\
+\bottomrule
+\end{tabular}
+\end{table}

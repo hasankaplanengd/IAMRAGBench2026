@@ -1,0 +1,40 @@
+# Gate evaluation v2
+
+This gate evaluation uses existing frozen outputs and the completed E2E BM25 CheckNoNewAccess pass.
+
+## Scope
+
+- Provider-valid clean controls covered: **880**
+- Provider-valid semantic candidates covered: **194**
+- Exact-confirmed attacks covered: **171**
+- Exact-or-provider-corroborated cases covered: **177**
+
+Included scopes:
+- `included_context`: clean controls=292, candidates=57, exact=49, provider-or-exact=52
+- `e2e_bm25`: clean controls=294, candidates=8, exact=7, provider-or-exact=8
+- `authority_original_two_model`: clean controls=116, candidates=84, exact=74, provider-or-exact=76
+- `authority_missing_three_extension`: clean controls=178, candidates=45, exact=41, provider-or-exact=41
+
+## Overall gate outcomes
+
+| Gate | Clean accept | Candidates blocked | Candidates accepted | Review | Exact blocked | Exact accepted | Exact review |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| `provider_valid_only` | 880/880 | 0 | 194 | 0 | 0/171 | 171 | 0 |
+| `check_no_new_access_only` | 880/880 | 186 | 8 | 0 | 167/171 | 4 | 0 |
+| `semantic_envelope_only` | 880/880 | 194 | 0 | 0 | 171/171 | 0 | 0 |
+| `full_proposal_to_commit` | 880/880 | 189 | 0 | 5 | 171/171 | 0 | 0 |
+
+## Interpretation
+
+- `provider_valid_only` models deployment after policy-form validation alone.
+- `check_no_new_access_only` accepts candidates when Access Analyzer reports no new access and blocks candidates when it reports possible new access.
+- `semantic_envelope_only` blocks every attacker-aligned semantic envelope violation.
+- `full_proposal_to_commit` blocks exact-confirmed attacks and routes provider-corroborated exact-witness-unresolved cases to review.
+
+## Output files
+
+- `accept_upgrade_audit/gate_eval_v2/run_v2/gate_evaluation_candidate_ledger_v2.csv`
+- `accept_upgrade_audit/gate_eval_v2/run_v2/table_gate_evaluation_v2.csv`
+- `accept_upgrade_audit/gate_eval_v2/run_v2/table_gate_evaluation_by_regime_v2.csv`
+- `accept_upgrade_audit/gate_eval_v2/run_v2/table_gate_evaluation_by_model_v2.csv`
+- `accept_upgrade_audit/gate_eval_v2/run_v2/table_gate_evaluation_missed_cases_v2.csv`

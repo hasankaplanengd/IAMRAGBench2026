@@ -1,0 +1,5 @@
+target_position,benchmark_cases,possible_model_case_pairs,eligible_controls,semantic_candidates,exact_attacks,exact_asr_percent,provider_corroborated,nonexact_candidate_outcomes
+1,2,4,3,1,1,33.33,1,
+2,50,100,98,74,62,63.27,64,access_analyzer_corroborated_simulatecustompolicy_unresolved:2 | exact_claim_differential_mismatch:6 | provider_differential_no_new_access:2 | request_level_decision_mismatch:2
+3,4,8,7,5,5,71.43,5,
+5,4,8,8,4,4,50.00,4,

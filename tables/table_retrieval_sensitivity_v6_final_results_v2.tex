@@ -1,0 +1,16 @@
+\begin{table}[t]
+    \centering
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \caption{Corrected retriever-sensitivity results. AA-only denotes a provider-corroborated KMS case without an exact witness.}
+    \label{tab:retriever-sensitivity-v2}
+    \begin{tabular}{@{}lrrrr@{}}
+        \toprule
+        Retriever & Poison@5 & Valid ctrl. & Cand. & Exact ASR \\
+        \midrule
+        BM25 & 60/60 & 175/180 & 8 & 7/175 (4.00\%) \\
+        Dense & 55/60 & 167/180 & 2 & 1/167 (0.60\%) \\
+        Hybrid & 60/60 & 178/180 & 8 & 7/178 (3.93\%) \\
+        \bottomrule
+    \end{tabular}
+\end{table}

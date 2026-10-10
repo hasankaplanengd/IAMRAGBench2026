@@ -1,0 +1,22 @@
+model:
+  provider: bedrock
+  model_id: amazon.nova-lite-v1:0
+  region: us-east-1
+  max_tokens: 1000
+  temperature: 0.0
+  top_p: null
+  use_converse: true
+
+dataset:
+  path: data/generated_from_master/rag_pairs_from_master_run_eval.jsonl
+  format: jsonl
+  pair_key: pair_id
+  expected_actions_key: expected_actions
+  ctrl_key: ctrl_prompt
+  poi_key: poi_prompt
+
+eval:
+  task: generation
+  metrics:
+  - exact_match
+  sample_size_pairs: 60

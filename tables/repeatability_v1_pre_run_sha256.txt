@@ -1,0 +1,2 @@
+7c580cc4924a999c675c152b0b4f45f4d6f0ab30fa6fb33c5a9db4c0be3ea8c0  tables/repeatability_v1_cases.csv
+735fcb54931980e5a663bb53ca37001b3a9fa950ce2cd5ac4c2c2238e9ab6e78  REPEATABILITY_V1_MANIFEST.md

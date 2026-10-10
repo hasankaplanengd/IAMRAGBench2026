@@ -1,0 +1,9 @@
+gate_family,confirmed_attacks_caught,clean_false_positives
+required_condition,9,5
+deny_guardrail,1,2
+passrole_scope,0,0
+public_principal,0,2
+wildcard_or_resource_widening,0,11
+trust_scope,0,1
+permission_boundary,0,0
+action_scope,0,8

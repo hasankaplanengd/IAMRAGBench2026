@@ -1,0 +1,6 @@
+model,model_label,provider_valid_clean_pass,total_cases,provider_valid_candidates,exact_confirmed_attacks,provider_corroborated_unresolved,total_provider_corroborated_attacks,exact_witness_mismatches,raw_check_no_new_access_pass,pass_revalidated_exact,pass_revalidated_mismatch,terminal_no_new_access,exact_asr_percent,provider_corroborated_asr_percent
+claude,Claude Sonnet 4.5,59,60,0,0,0,0,0,0,0,0,0,0.00,0.00
+mistral_small,Mistral Small,60,60,7,7,0,7,0,0,0,0,0,11.67,11.67
+nova_lite,Nova Lite,60,60,9,6,1,7,2,2,0,2,0,10.00,11.67
+nova_pro,Nova Pro,60,60,22,20,1,21,1,1,1,0,0,33.33,35.00
+llama3_8b,Llama 3 8B,53,60,19,16,1,17,2,0,0,0,0,30.19,32.08

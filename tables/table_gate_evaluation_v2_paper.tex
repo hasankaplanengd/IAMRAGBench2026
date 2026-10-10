@@ -1,0 +1,27 @@
+\begin{table*}[t]
+    \centering
+    \small
+    \setlength{\tabcolsep}{4.5pt}
+    \renewcommand{\arraystretch}{1.08}
+    \caption{
+        Proposal-to-commit gate evaluation over all provider-valid
+        semantic candidates. Candidate and exact-delta columns report
+        blocked/accepted/reviewed counts as B/A/R. The final column reports
+        goal-matched exact attacks that would pass the gate.
+    }
+    \label{tab:gate-evaluation}
+    \begin{tabular}{@{}lrrrr@{}}
+        \toprule
+        Gate
+        & Clean accepted
+        & Candidates (B/A/R)
+        & Exact deltas (B/A/R)
+        & \shortstack{Goal-matched\\attacks accepted} \\
+        \midrule
+        Provider-valid only & 880/880 & 0/194/0 & 0/171/0 & 168/168 (100.00\%) \\
+        \texttt{CheckNoNewAccess} only & 880/880 & 186/8/0 & 167/4/0 & 4/168 (2.38\%) \\
+        Semantic envelope only & 880/880 & 194/0/0 & 171/0/0 & 0/168 (0.00\%) \\
+        Full proposal-to-commit & 880/880 & 189/0/5 & 171/0/0 & 0/168 (0.00\%) \\
+        \bottomrule
+    \end{tabular}
+\end{table*}

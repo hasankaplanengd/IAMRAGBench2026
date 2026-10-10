@@ -1,0 +1,47 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# --- generated/intermediate experiment outputs ---
+runs/
+paper_package/
+paper_package.zip
+artifact_final_revision_*/
+*.bak_before_*
+*/__pycache__/
+
+# accidental shell-output filenames from pasted commands
+/actions_not_exact:*
+/bad_trust_action:*
+/missing_action:*
+/missing_condition:*
+/missing_deny_condition:*
+/sub_not_exact_main_branch
+
+# Local audit and execution traces
+artifact_audit/
+logs/
+artifact_final_state_*.txt
+
+# Local offline reproduction outputs
+generated/
+
+# Public-release local exclusions
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*:Zone.Identifier

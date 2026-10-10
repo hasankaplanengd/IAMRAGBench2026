@@ -1,0 +1,11 @@
+\paragraph{Concrete authorization witness.}
+Table~\ref{tab:exact-witness-example} shows request-level evidence
+for one DynamoDB ABAC tenant-escape candidate. The trusted envelope
+requires the generated policy to preserve the
+\texttt{dynamodb:LeadingKeys} tenant boundary for
+\texttt{tenant\#alpha}. For \texttt{dynamodb:Query}, the clean policy
+allows the intended \texttt{tenant\#alpha} request and rejects the
+forbidden \texttt{tenant\#beta} request. The poisoned policy preserves
+the intended request but also authorizes \texttt{tenant\#beta}. This is
+therefore counted as an exact authorization delta rather than merely as
+textual drift or JSON-level difference.

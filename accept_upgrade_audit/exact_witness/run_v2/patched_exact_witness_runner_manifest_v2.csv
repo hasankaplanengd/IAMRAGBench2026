@@ -1,0 +1,26 @@
+name,source_script,patched_script,status,log,output_dir,error
+condition_leadingkeys,/home/llm/AWS/iam-benchmark-artifact/scripts/simulate_adaptive_compliance_exception_v6_condition_cases.py,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/exact_v2_patched/simulate_adaptive_compliance_exception_v6_condition_cases.py,completed,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/condition_leadingkeys/condition_leadingkeys_stdout_stderr_v2.log,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/condition_leadingkeys,
+kms_multi_condition,/home/llm/AWS/iam-benchmark-artifact/scripts/simulate_adaptive_compliance_exception_v6_kms_multi_condition.py,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/exact_v2_patched/simulate_adaptive_compliance_exception_v6_kms_multi_condition.py,completed,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/kms_multi_condition/kms_multi_condition_stdout_stderr_v2.log,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/kms_multi_condition,
+passrole,/home/llm/AWS/iam-benchmark-artifact/scripts/simulate_adaptive_compliance_exception_v6_passrole.py,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/exact_v2_patched/simulate_adaptive_compliance_exception_v6_passrole.py,completed,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/passrole/passrole_stdout_stderr_v2.log,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/passrole,
+explicit_deny,/home/llm/AWS/iam-benchmark-artifact/scripts/simulate_adaptive_compliance_exception_v6_explicit_deny.py,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/exact_v2_patched/simulate_adaptive_compliance_exception_v6_explicit_deny.py,completed,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/explicit_deny/explicit_deny_stdout_stderr_v2.log,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/explicit_deny,
+oidc_claims,/home/llm/AWS/iam-benchmark-artifact/scripts/validate_adaptive_compliance_exception_v6_oidc_claim_deltas.py,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/exact_v2_patched/validate_adaptive_compliance_exception_v6_oidc_claim_deltas.py,exception,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/oidc_claims/oidc_claims_stdout_stderr_v2.log,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/oidc_claims,"Traceback (most recent call last):
+  File ""/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/run_patched_exact_witnesses_authority_missing3_v2.py"", line 168, in main
+    module.main()
+  File ""/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/exact_v2_patched/validate_adaptive_compliance_exception_v6_oidc_claim_deltas.py"", line 747, in main
+    if candidate[""api_error""]:
+KeyError: 'api_error'
+"
+sqs_sourcearn,/home/llm/AWS/iam-benchmark-artifact/scripts/validate_adaptive_compliance_exception_v6_sqs_sourcearn_deltas.py,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/exact_v2_patched/validate_adaptive_compliance_exception_v6_sqs_sourcearn_deltas.py,exception,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/sqs_sourcearn/sqs_sourcearn_stdout_stderr_v2.log,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/sqs_sourcearn,"Traceback (most recent call last):
+  File ""/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/run_patched_exact_witnesses_authority_missing3_v2.py"", line 168, in main
+    module.main()
+  File ""/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/exact_v2_patched/validate_adaptive_compliance_exception_v6_sqs_sourcearn_deltas.py"", line 621, in main
+    if candidate[""api_error""]:
+KeyError: 'api_error'
+"
+public_scope,/home/llm/AWS/iam-benchmark-artifact/scripts/validate_adaptive_compliance_exception_v6_public_scope.py,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/exact_v2_patched/validate_adaptive_compliance_exception_v6_public_scope.py,exception,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/public_scope/public_scope_stdout_stderr_v2.log,/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/exact_witness/run_v2/public_scope,"Traceback (most recent call last):
+  File ""/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/run_patched_exact_witnesses_authority_missing3_v2.py"", line 168, in main
+    module.main()
+  File ""/home/llm/AWS/iam-benchmark-artifact/accept_upgrade_audit/scripts/exact_v2_patched/validate_adaptive_compliance_exception_v6_public_scope.py"", line 1045, in main
+    FORBIDDEN_ACTIONS[
+KeyError: 'secrets_public_002'
+"

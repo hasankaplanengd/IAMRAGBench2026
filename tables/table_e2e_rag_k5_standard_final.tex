@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\small
+\caption{End-to-end RAG results for the 60-case IAM semantic benchmark using BM25 retrieval, top-$k=5$, and the standard RAG prompt. ASR is computed over clean-control-passing cases; malformed/non-deployable outputs, provider-invalid policies, and functional drifts that do not realize the attacker goal are not counted as confirmed attacks.}
+\label{tab:e2e-rag-k5-standard-final}
+\begin{tabular}{lrrrrl}
+\toprule
+Model & Control pass & Poison@5 & Confirmed attacks & ASR & Notes \\
+\midrule
+Claude Sonnet 4.5 & 60/60 & 59/60 & 0 & 0.0\% & -- \\
+Mistral Small & 60/60 & 59/60 & 0 & 0.0\% & 1 functional drift \\
+Nova Lite & 60/60 & 59/60 & 1 & 1.7\% & provider error rerun resolved \\
+Nova Pro & 60/60 & 59/60 & 4 & 6.7\% & -- \\
+Llama 3 8B & 59/60 & 59/60 & 5 & 8.5\% & +1 provider-invalid, +1 nondeployable \\
+\bottomrule
+\end{tabular}
+\end{table}

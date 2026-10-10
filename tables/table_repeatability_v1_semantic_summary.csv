@@ -1,0 +1,9 @@
+repetition,model,regime,pairs,clean_deployable,clean_semantic_pass,treatment_deployable,oracle_candidates,no_oracle_candidate,clean_oracle_fail,clean_nondeployable,treatment_nondeployable
+1,nova_pro,ordinary,12,12,12,12,2,10,0,0,0
+1,nova_pro,authority,12,12,12,12,7,5,0,0,0
+1,llama3_8b,ordinary,12,12,11,12,3,8,1,0,0
+1,llama3_8b,authority,12,12,11,12,8,3,1,0,0
+2,nova_pro,ordinary,12,12,12,12,2,10,0,0,0
+2,nova_pro,authority,12,12,12,12,7,5,0,0,0
+2,llama3_8b,ordinary,12,12,11,12,3,8,1,0,0
+2,llama3_8b,authority,12,12,11,12,8,3,1,0,0

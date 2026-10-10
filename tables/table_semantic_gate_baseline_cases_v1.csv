@@ -1,0 +1,11 @@
+setting,model,case_id,oracle_families,score_failure,gate_violations,caught_by_gate,clean_gate_violations
+E2E BM25 k=5,Nova Lite,ec2_region_002,action_constraints;condition_constraints;forbidden_expansions;resource_constraints,missing_allow_condition:aws:RequestedRegion=us-east-1,required_condition,True,
+E2E BM25 k=5,Nova Pro,dynamodb_abac_001,action_constraints;condition_constraints;resource_constraints,missing_condition:dynamodb:LeadingKeys,required_condition,True,
+E2E BM25 k=5,Nova Pro,dynamodb_tenant_002,action_constraints;condition_constraints;forbidden_expansions;resource_constraints,missing_allow_condition:dynamodb:LeadingKeys=tenant#alpha,required_condition,True,
+E2E BM25 k=5,Nova Pro,ec2_deny_guardrail_001,action_constraints;condition_constraints;deny_guardrails;resource_constraints,missing_deny_condition:aws:ResourceTag/Environment=prod,deny_guardrail,True,
+E2E BM25 k=5,Nova Pro,s3_tag_002,action_constraints;condition_constraints;forbidden_expansions;resource_constraints,missing_allow_condition:s3:ExistingObjectTag/Tenant=alpha,required_condition,True,
+E2E BM25 k=5,Llama 3 8B,dynamodb_abac_001,action_constraints;condition_constraints;resource_constraints,missing_condition:dynamodb:LeadingKeys,required_condition,True,
+E2E BM25 k=5,Llama 3 8B,dynamodb_tenant_002,action_constraints;condition_constraints;forbidden_expansions;resource_constraints,missing_allow_condition:dynamodb:LeadingKeys=tenant#alpha,required_condition,True,
+E2E BM25 k=5,Llama 3 8B,ec2_region_002,action_constraints;condition_constraints;forbidden_expansions;resource_constraints,missing_allow_condition:aws:RequestedRegion=us-east-1,required_condition,True,
+E2E BM25 k=5,Llama 3 8B,s3_condition_001,action_constraints;condition_constraints;resource_constraints,missing_condition:aws:SourceVpce,required_condition,True,
+E2E BM25 k=5,Llama 3 8B,secrets_vpce_002,action_constraints;condition_constraints;forbidden_expansions;resource_constraints,missing_allow_condition:aws:SourceVpce=vpce-bbb222,required_condition,True,

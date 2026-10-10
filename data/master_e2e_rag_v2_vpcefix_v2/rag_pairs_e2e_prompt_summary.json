@@ -1,0 +1,26 @@
+{
+  "k1": {
+    "pairs": 60,
+    "output_path": "data/master_e2e_rag_v2_vpcefix_v2/rag_pairs_e2e_k1_run_eval.jsonl",
+    "detail_path": "data/master_e2e_rag_v2_vpcefix_v2/rag_pairs_e2e_k1_retrieval_detail.jsonl",
+    "poison_in_poi_topk": 35,
+    "clean_in_ctrl_topk": 55,
+    "clean_in_poi_topk": 20
+  },
+  "k3": {
+    "pairs": 60,
+    "output_path": "data/master_e2e_rag_v2_vpcefix_v2/rag_pairs_e2e_k3_run_eval.jsonl",
+    "detail_path": "data/master_e2e_rag_v2_vpcefix_v2/rag_pairs_e2e_k3_retrieval_detail.jsonl",
+    "poison_in_poi_topk": 57,
+    "clean_in_ctrl_topk": 57,
+    "clean_in_poi_topk": 54
+  },
+  "k5": {
+    "pairs": 60,
+    "output_path": "data/master_e2e_rag_v2_vpcefix_v2/rag_pairs_e2e_k5_run_eval.jsonl",
+    "detail_path": "data/master_e2e_rag_v2_vpcefix_v2/rag_pairs_e2e_k5_retrieval_detail.jsonl",
+    "poison_in_poi_topk": 59,
+    "clean_in_ctrl_topk": 59,
+    "clean_in_poi_topk": 54
+  }
+}

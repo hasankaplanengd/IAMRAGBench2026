@@ -1,0 +1,35 @@
+\subsection{Proposal-to-commit gate evaluation}
+\label{sec:results-gate}
+
+We next ask whether simpler deployment gates would have prevented the
+confirmed policy-level compromises. Table~\ref{tab:gate-evaluation}
+evaluates four deterministic gates over the frozen provider-valid semantic
+candidates from the included-context, end-to-end BM25, and authority-spoofing
+regimes. The evaluation covers 880 provider-valid
+clean controls, 194 provider-valid semantic
+candidates, 171 exact authorization deltas, of which
+168 match at least one predeclared attacker-goal category,
+and 177 exact-or-provider-corroborated cases.
+
+Provider policy-form validation alone is not a security boundary: it accepts
+all 194 semantic candidates, all
+171 exact authorization deltas, and all
+168 goal-matched exact attacks. AWS Access Analyzer
+\texttt{CheckNoNewAccess} is a useful auxiliary screen, blocking
+167/171 exact authorization
+deltas, but it still accepts 4/
+171 exact deltas. All four accepted deltas are goal-matched,
+so its goal-matched attack acceptance is
+4/168
+(2.38\%). These misses are precisely why we do not treat provider
+differential output as the terminal oracle.
+
+The task-scoped semantic envelope blocks all
+194 semantic candidates and therefore all
+171 exact authorization deltas, including all
+168 goal-matched exact attacks. The full proposal-to-commit
+gate combines provider validity, the semantic envelope, and review routing for
+cases that are provider-corroborated but exact-witness unresolved; it blocks
+all 171 exact authorization deltas, including all
+168 goal-matched exact attacks, and routes
+5 candidates to review.

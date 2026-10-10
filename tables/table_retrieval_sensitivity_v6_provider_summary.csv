@@ -1,0 +1,7 @@
+model,retriever,semantic_clean_pass,provider_valid_clean_pass,semantic_candidates,provider_valid_candidates,invalid_control_candidates,invalid_poison_candidates,check_fail,check_pass
+nova_lite,dense,59,58,0,0,0,0,0,0
+nova_lite,hybrid,60,60,1,1,0,0,1,0
+nova_pro,dense,60,58,1,1,0,0,1,0
+nova_pro,hybrid,60,60,4,4,0,0,3,1
+llama3_8b,dense,56,51,2,1,1,0,1,0
+llama3_8b,hybrid,60,58,4,3,1,0,3,0

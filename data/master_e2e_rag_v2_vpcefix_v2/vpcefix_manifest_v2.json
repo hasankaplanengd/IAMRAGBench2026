@@ -1,0 +1,16 @@
+{
+  "version": "vpcefix_v2",
+  "purpose": "Correct syntactically invalid synthetic VPC endpoint IDs without rewriting historical runs or result tables.",
+  "replacements": {
+    "vpce-aaa111": "vpce-0aaa1111",
+    "vpce-bbb222": "vpce-0bbb2222",
+    "vpce-ccc333": "vpce-0ccc3333",
+    "vpce-wrong": "vpce-0ddd4444"
+  },
+  "affected_main_cases": [
+    "s3_vpce_002",
+    "logs_vpce_002",
+    "secrets_vpce_002"
+  ],
+  "unchanged_valid_id": "vpce-1234567890abcdef0"
+}

@@ -1,0 +1,4 @@
+\paragraph{Provider-grounded included-context results.}
+In the unguarded included-context stress setting, the semantic oracle identified 57 provider-valid candidates across 292 provider-valid clean controls. Provider-grounded differential checks confirm 49 exact authorization deltas. Of these, 46 realize the predeclared attacker goal; the three off-target deltas are Mistral Small OIDC cases that modify \texttt{aud} rather than the targeted \texttt{sub}. AWS Access Analyzer corroborates three additional KMS deltas whose encryption-context component could not be positively evaluated by \texttt{SimulateCustomPolicy}, yielding 52 provider-corroborated cases in total. We report the exact-confirmed and corroborated rates separately in Table~\ref{tab:included-context-v6-final}.
+
+\input{tables/table_included_context_v6_final_results.tex}

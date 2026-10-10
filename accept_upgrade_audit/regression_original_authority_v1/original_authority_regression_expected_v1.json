@@ -1,0 +1,41 @@
+{
+  "exact_confirmed": 74,
+  "final_outcome_counts": {
+    "access_analyzer_corroborated_simulatecustompolicy_unresolved": 2,
+    "exact_claim_differential_confirmed": 7,
+    "exact_claim_differential_mismatch": 6,
+    "exact_public_scope_differential_confirmed": 4,
+    "exact_sourcearn_differential_confirmed": 2,
+    "request_level_decision_mismatch": 2,
+    "simulatecustompolicy_confirmed": 61
+  },
+  "input": "tables/table_adaptive_compliance_exception_v6_final_candidate_ledger_v2.csv",
+  "model_counts": {
+    "Llama 3 8B": 37,
+    "Nova Pro": 47
+  },
+  "not_exact_confirmed": 10,
+  "not_provider_corroborated": 8,
+  "policy_files_missing": 0,
+  "provider_corroborated": 76,
+  "regression_target": "accept_upgrade_audit/regression_original_authority_v1/original_authority_regression_target_v1.csv",
+  "required_pass_condition": {
+    "access_analyzer_corroborated_simulatecustompolicy_unresolved": 2,
+    "exact_confirmed": 74,
+    "provider_corroborated": 76,
+    "total_candidates": 84
+  },
+  "total_candidates": 84,
+  "validation_family_counts": {
+    "action_scope_widening": 8,
+    "allow_condition_removal": 19,
+    "dynamodb_leadingkeys": 4,
+    "explicit_deny_guardrail": 9,
+    "kms_multi_condition": 2,
+    "oidc_or_role_trust": 13,
+    "passrole_scope": 14,
+    "public_or_principal_scope": 4,
+    "resource_scope_widening": 9,
+    "sqs_sourcearn_resource": 2
+  }
+}

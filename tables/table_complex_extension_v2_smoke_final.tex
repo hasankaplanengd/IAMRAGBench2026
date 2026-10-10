@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Complex IAM extension smoke test. The extension adds NotAction guardrails and policy-lifecycle/commit-risk cases. These cases are used to validate construct coverage rather than to increase attack success rate.}
+\label{tab:complex-extension-v2}
+\begin{tabular}{lrrrr}
+\toprule
+Model & Cases & Control pass & Poisoned pass & Attacks \\
+\midrule
+Nova Lite & 8 & 8/8 & 8/8 & 0 \\
+Nova Pro & 8 & 8/8 & 8/8 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

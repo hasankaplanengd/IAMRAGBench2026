@@ -1,0 +1,3 @@
+model,model_label,provider_valid_clean_pass,total_cases,provider_valid_candidates,exact_confirmed_attacks,provider_corroborated_unresolved,total_provider_corroborated_attacks,exact_witness_mismatches,raw_check_no_new_access_pass,pass_revalidated_exact,pass_revalidated_mismatch,terminal_no_new_access,exact_asr_percent,provider_corroborated_asr_percent
+nova_pro,Nova Pro,60,60,47,45,1,46,1,1,1,0,0,75.00,76.67
+llama3_8b,Llama 3 8B,56,60,37,29,1,30,7,1,1,0,0,51.79,53.57

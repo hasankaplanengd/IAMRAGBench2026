@@ -1,0 +1,2 @@
+gate,attacks_caught,total_confirmed_attacks,clean_false_positives,clean_pass_outputs
+required_condition_or_deny_guardrail,10,10,7,299

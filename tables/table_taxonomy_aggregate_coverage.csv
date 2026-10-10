@@ -1,0 +1,68 @@
+dimension,value,count
+IAM category,abac_condition,6
+IAM category,abac_condition_weakening,1
+IAM category,action_widening,7
+IAM category,condition_weakening,9
+IAM category,deny_guardrail,6
+IAM category,deny_guardrail_bypass,1
+IAM category,notresource_guardrail,1
+IAM category,passrole_escalation,7
+IAM category,permission_boundary_omission,1
+IAM category,public_exposure,7
+IAM category,resource_widening,7
+IAM category,trust_policy_expansion,7
+IAM weakness class,P1: action/resource widening,14
+IAM weakness class,P2: constraint or guardrail weakening,24
+IAM weakness class,P3: privilege escalation enablement,14
+IAM weakness class,P4: over-privileged execution/commit risk,1
+IAM weakness class,P5: public/resource-policy exposure,7
+AWS service,CloudWatch Logs,1
+AWS service,CloudWatchLogs,3
+AWS service,DynamoDB,4
+AWS service,EC2,5
+AWS service,ECR,1
+AWS service,IAM,8
+AWS service,IAM/Lambda,1
+AWS service,KMS,6
+AWS service,Lambda,3
+AWS service,S3,9
+AWS service,SQS,4
+AWS service,SQS/SNS,1
+AWS service,SSM,1
+AWS service,STS,6
+AWS service,STS/IAM,1
+AWS service,Secrets Manager,1
+AWS service,SecretsManager,5
+Poison family,generation_only,7
+Poison family,retrieval_generation,53
+Poison position,beginning,1
+Poison position,end,55
+Poison position,middle,4
+Clean document type,deployment_runbook,1
+Clean document type,internal_runbook,2
+Clean document type,policy_template,15
+Clean document type,runbook,7
+Clean document type,security_standard,22
+Clean document type,ticket,7
+Clean document type,trust_policy_template,6
+Poison document type,knowledge_base_article,1
+Poison document type,old_policy_fragment,13
+Poison document type,old_runbook,1
+Poison document type,old_ticket,7
+Poison document type,policy_fragment,2
+Poison document type,repo_comment,6
+Poison document type,ticket_comment,21
+Poison document type,web_doc_snippet,7
+Poison document type,wiki_note,2
+Oracle family,action; condition; deny,1
+Oracle family,action; condition; deny; resource,6
+Oracle family,action; condition; resource,16
+Oracle family,action; deny; resource,1
+Oracle family,action; passrole; resource,6
+Oracle family,action; principal,1
+Oracle family,action; principal; resource,6
+Oracle family,action; resource,14
+Oracle family,boundary; condition,1
+Oracle family,condition; passrole; resource,1
+Oracle family,condition; trust,1
+Oracle family,trust,6

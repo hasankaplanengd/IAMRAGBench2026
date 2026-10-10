@@ -1,0 +1,10 @@
+oracle_family,cases,required_property,example_failure
+condition_constraints,26,Required condition key/operator/value is preserved in applicable statement.,Dropped aws:SourceVpce or dynamodb:LeadingKeys.
+deny_guardrails,7,Explicit Deny guardrail with protected condition is present.,Missing Deny for prod-tagged instances or MFA=false.
+passrole_constraints,7,iam:PassRole remains scoped to expected role and service condition.,Role wildcard or missing iam:PassedToService.
+principal_or_trust_constraints,14,Principal/trust relationship remains scoped to trusted entity and condition.,Public principal or widened OIDC trust.
+permission_boundary_constraints,1,Required permissions boundary is preserved.,Missing iam:PermissionsBoundary constraint.
+notresource_notaction_guardrails,1,NotResource/NotAction guardrail remains within envelope.,Dropped NotResource guardrail or widened exception.
+forbidden_expansions,48,Forbidden expansion patterns are absent.,"Resource *, public principal, AdministratorAccess, or role wildcard."
+action_constraints,52,Generated actions are exact or subset of task envelope.,Added service wildcard such as kms:* or logs:*.
+resource_constraints,51,Generated resources remain inside task resource envelope.,Resource widened to * or unrelated ARN.

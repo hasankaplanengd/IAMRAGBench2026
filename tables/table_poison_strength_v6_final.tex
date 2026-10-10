@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Poison-strength ablation for Nova Pro under BM25 at $k=5$. All variants retrieve the task-matched poison in every case and use the same frozen, provider-valid control baseline.}
+\label{tab:poison-strength-v6}
+\begin{tabular}{lrrr}
+\toprule
+Poison variant & Poison@5 & Semantic cand. & Exact attacks \\
+\midrule
+Retrieval-relevant reference & 60/60 & 0 & 0/60 (0.00\%) \\
+Weak compatibility note & 60/60 & 0 & 0/60 (0.00\%) \\
+Operational template & 60/60 & 3 & 2/60 (3.33\%) \\
+\bottomrule
+\end{tabular}
+\end{table}

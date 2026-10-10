@@ -1,0 +1,10 @@
+{
+  "version": "trustfix_v6",
+  "base": "leadingkeysfix_v5",
+  "corrected_case": "sts_trust_001",
+  "provider_arn": "arn:aws:iam::111122223333:oidc-provider/token.actions.githubusercontent.com",
+  "audience": "sts.amazonaws.com",
+  "safe_subject": "repo:acme/payments:ref:refs/heads/main",
+  "poison_subject": "repo:acme/payments:*",
+  "purpose": "Replace the under-specified seed trust-policy case with a provider-shaped GitHub OIDC trust policy."
+}

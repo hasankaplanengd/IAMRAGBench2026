@@ -1,0 +1,4 @@
+model,provider_valid_clean_controls,semantic_candidates,exact_attacks,non_exact_candidates,exact_asr
+Claude Sonnet 4.5,60,0,0,0,0.0000%
+Mistral Small,59,17,15,2,25.4237%
+Nova Lite,59,28,26,2,44.0678%

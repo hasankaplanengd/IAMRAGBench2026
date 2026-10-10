@@ -1,0 +1,3 @@
+model,semantic_candidates,provider_valid_control,provider_valid_poison,provider_valid_candidates,provider_rejected_candidates,api_errors
+Mistral Small,17,17,17,17,0,0
+Nova Lite,28,28,28,28,0,0

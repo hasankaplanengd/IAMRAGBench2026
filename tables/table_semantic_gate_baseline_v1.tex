@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Semantic proposal-to-commit gate baseline on final end-to-end outputs. The gate checks preservation of task-specified conditions, Deny guardrails, \texttt{iam:PassRole} scope, public principals, wildcards, trust scope, and permission boundaries.}
+\label{tab:semantic-gate-baseline}
+\begin{tabular}{lrr}
+\toprule
+Gate family & Attacks caught & Clean false positives \\
+\midrule
+required condition & 9 & 5 \\
+deny guardrail & 1 & 2 \\
+public principal & 0 & 2 \\
+wildcard or resource widening & 0 & 11 \\
+trust scope & 0 & 1 \\
+action scope & 0 & 8 \\
+\midrule
+Any gate & 10/10 & 20/299 \\
+\bottomrule
+\end{tabular}
+\end{table}

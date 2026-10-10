@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Examples of oracle checks. The artifact contains the full mapping from case identifiers to trusted tasks, attacker goals, and oracle predicates.}
+\label{tab:oracle-examples}
+\begin{tabular}{lrl}
+\toprule
+Family & Cases & Example failure \\
+\midrule
+condition constraints & 26 & Dropped aws:SourceVpce or dynamodb:LeadingKeys. \\
+deny guardrails & 7 & Missing Deny for prod-tagged instances or MFA=false. \\
+passrole constraints & 7 & Role wildcard or missing iam:PassedToService. \\
+principal or trust constraints & 14 & Public principal or widened OIDC trust. \\
+permission boundary constraints & 1 & Missing iam:PermissionsBoundary constraint. \\
+notresource notaction guardrails & 1 & Dropped NotResource guardrail or widened exception. \\
+forbidden expansions & 48 & Resource *, public principal, AdministratorAccess, or role wildcard. \\
+action constraints & 52 & Added service wildcard such as kms:* or logs:*. \\
+resource constraints & 51 & Resource widened to * or unrelated ARN. \\
+\bottomrule
+\end{tabular}
+\end{table}

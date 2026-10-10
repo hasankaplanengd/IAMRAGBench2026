@@ -1,0 +1,10 @@
+{
+  "cases": 60,
+  "queries": 60,
+  "clean_relevant_docs": 60,
+  "poison_relevant_docs": 60,
+  "distractor_docs": 600,
+  "total_corpus_docs": 720,
+  "corpus_path": "data/master_e2e_rag_v1/corpus.jsonl",
+  "queries_path": "data/master_e2e_rag_v1/queries.jsonl"
+}

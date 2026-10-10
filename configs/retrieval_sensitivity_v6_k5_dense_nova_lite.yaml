@@ -1,0 +1,20 @@
+model:
+  provider: bedrock
+  model_id: amazon.nova-lite-v1:0
+  region: us-east-1
+  max_tokens: 1200
+  temperature: 0.0
+  top_p: null
+  use_converse: true
+dataset:
+  path: data/master_e2e_rag_v6_retrieval_sensitivity/rag_pairs_e2e_k5_dense_standard_run_eval.jsonl
+  format: jsonl
+  pair_key: pair_id
+  expected_actions_key: expected_actions
+  ctrl_key: ctrl_prompt
+  poi_key: poi_prompt
+eval:
+  task: generation
+  metrics:
+  - exact_match
+  sample_size_pairs: 60

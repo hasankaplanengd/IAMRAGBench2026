@@ -1,0 +1,4 @@
+retriever,cases,poison_at_1,poison_at_3,poison_at_5,clean_ctrl_at_5,clean_poi_at_5,median_poison_rank,mean_poison_rank
+bm25,60,38,57,59,59,54,1,1.53
+dense,60,40,56,58,58,53,1,1.58
+hybrid,60,43,57,59,59,54,1,1.45
