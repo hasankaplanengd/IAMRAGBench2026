@@ -171,8 +171,7 @@ on a smaller frozen subset.
 ### Main benchmark data
 
 - `data/generated_from_master_v6_trustfix/rag_pairs_from_master.jsonl`
-- `data/generated_from_master_v6_trustfix/rag_corpus_docs_from_master.jsonl`
-- `data/master_e2e_rag_v6_k5_standard_full60/`
+- `data/master_e2e_rag_v6_trustfix/`
 - `data/repeatability_v1/`
 
 ### Final result tables

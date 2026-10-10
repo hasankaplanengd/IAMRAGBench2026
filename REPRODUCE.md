@@ -11,8 +11,8 @@ reruns are optional and require separate AWS credentials and Bedrock model acces
 
 Clone the artifact repository and enter the repository root:
 
-    git clone <artifact-url> iam-benchmark-artifact
-    cd iam-benchmark-artifact
+    git clone --branch v1.0.1 --depth 1 https://github.com/drhasankaplan/IAMRAGBench2026.git
+    cd IAMRAGBench2026
 
 For an existing checkout, make sure the working tree is clean:
 
